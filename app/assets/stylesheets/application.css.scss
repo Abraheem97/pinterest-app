@@ -39,7 +39,7 @@
      }
  }
  
- #pins {
+ #pins {animation: show 3s ease;
    margin: 0 auto;
    width: 100%;
    .box {
@@ -78,7 +78,7 @@
      }
  }
  
- #pin_show {
+ #pin_show {animation: show 2s ease;
      .panel-heading {
          padding: 0;
      }
@@ -115,3 +115,12 @@
  textarea {
      min-height: 250px;
  }
+
+ @keyframes show {
+    0%{
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+ }}
